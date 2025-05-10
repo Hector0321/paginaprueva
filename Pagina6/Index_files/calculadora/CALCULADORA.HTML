@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+		<link rel="stylesheet" href="Style.css">
+	 
+	  
+</head>
+
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVvF3pe5232sk1mnxMkC-QOQAi60sSRah67A&s">
+	<div ><center><h1>Cronometro</h1></center></div>
+	<div id="contenedor">
+		<div class="reloj" id="Horas">00</div>
+		<div class="reloj" id="Minutos">:00</div>
+		<div class="reloj" id="Segundos">:00</div>
+		<div class="reloj" id="Centesimas">:00</div>
+		<input type="button" class="boton" id="inicio" value="Start &#9658;" onclick="inicio();">
+		<input type="button" class="boton" id="parar" value="Stop &#8718;" onclick="parar();" disabled>
+		<input type="button" class="boton" id="continuar" value="Resume &#8634;" onclick="inicio();" disabled>
+		<input type="button" class="boton" id="reinicio" value="Reset &#8635;" onclick="reinicio();" disabled>
+	</div>
+
+
+
+	<script src="fun.js"></script>
+</body>
+
+</html>
