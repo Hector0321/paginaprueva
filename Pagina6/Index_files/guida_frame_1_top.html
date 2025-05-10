@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Mi Página Web - Hector Alberto</title>
+  <style>
+    /* Fondo con animación y mejor contraste */
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('IMAGENES/fondo.gif') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+    }
+
+    /* Efecto de superposición para mejorar la legibilidad */
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    /* Contenedor del banner */
+    .marquee-container {
+      position: fixed; /* Se mantiene fijo arriba */
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 1000px; /* Ajuste de ancho para que no crezca demasiado */
+      padding: 5px 0; /* Reducción del padding para conservar el tamaño original */
+      z-index: 100;
+    }
+
+    /* Estilos del marquee */
+    .marquee {
+      font-family: 'Impact', sans-serif;
+      font-size: 24px; /* Ajuste para mantener el tamaño original */
+      color: white;
+      background-color: #008f39;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 100, 0.8);
+      animation: glow 1.5s infinite alternate;
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 15px rgba(0, 255, 100, 0.8); }
+      100% { box-shadow: 0 0 25px rgba(0, 255, 100, 1); }
+    }
+
+    /* Para que el contenido de la página no quede oculto debajo del banner */
+    .content {
+      padding-top: 60px; /* Ajuste para evitar que el contenido se superponga */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <!-- Banner -->
+  <div class="marquee-container">
+    <marquee class="marquee">🔥 Esta es mi página web, Hecha por Hector Alberto 🔥</marquee>
+  </div>
+
+  
+
+</body>
+</html>
